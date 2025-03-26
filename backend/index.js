@@ -283,4 +283,4 @@ app.post("/upload-playlist-image/:playlistId", checkToken, upload.single('image'
   }
 });
 
-app.listen(3001, () => console.log("Servidor rodando na porta 3001"));
+module.exports = app;
