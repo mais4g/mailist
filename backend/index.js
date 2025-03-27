@@ -25,8 +25,8 @@ const upload = multer({
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = process.env.REDIRECT_URI;
-const FRONTEND_URL = process.env.FRONTEND_URL;
+const REDIRECT_URI = process.env.REDIRECT_URI || "http://localhost:3001/callback";
+const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
 
 // Usar um objeto para armazenar tokens por sessão (em produção, use Redis ou similar)
 const tokens = {};
